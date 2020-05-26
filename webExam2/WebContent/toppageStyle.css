@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+	margin: 0 auto;
+	background-image: url("login.jpg");
+	background-size:cover;
+	font-size: 20px;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+div {
+	text-align: center;
+}
+h2 {
+	font-size:80px;
+	margin-left: 40px;
+	opacity:0.8;
+	color: #ffffff;
+}
+
+button{
+	display: inline-block;
+	padding: 0.9em 3em;
+	text-decoration: none;
+	color: #800000;
+	border: solid 2px #800000;
+	border-radius: 3px;
+	
+	margin: 0 auto;
+}
+

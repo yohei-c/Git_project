@@ -6,12 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>toppage</title>
+<link rel="stylesheet" href="toppageStyle.css">
 </head>
 <body>
-
+	<div>
 	<form action="ToppageServlet" method="get">
+		<h2>SHOPPING SITE</h2>
 		<button name="btn" value="insert">ログイン</button>
 	</form>
+	</div>
 	
 
 </body>

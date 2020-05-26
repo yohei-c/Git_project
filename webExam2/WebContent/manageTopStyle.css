@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+	margin: 0 auto;
+	background-image: url("login.jpg");
+	background-size:cover;
+	font-size: 20px;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+
+div{
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-left: 18%;
+	float: left;
+}
+
+h2{
+	color: #ffffff;
+}
+
+
+
+label{
+	display: block;
+	width: 50px;
+}
+
+
+.login input{
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #800000;
+	border: solid 2px #800000;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+.newMember input{
+	display: inline-block;
+	padding: 0.9em 3em;
+	text-decoration: none;
+	color: #800000;
+	border: solid 2px #800000;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	margin:50px;
+}
+
+.submit:hover {
+	background: #800000;
+	color: white;
+}
+
+.newMem:hover {
+	background: #800000;
+	color: white;
+}
