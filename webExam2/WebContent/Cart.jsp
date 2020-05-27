@@ -4,14 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <link rel="stylesheet" href="Cart.css">
 <meta charset="utf-8">
 <title>Cart</title>
 </head>
 <body>
 	<i class="fas fa-cart-arrow-down">カートの内容を確認</i>
-	
 	<c:if test="${list != null }">
 		<table border="1">
 			<tr>
