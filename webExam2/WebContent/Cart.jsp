@@ -25,7 +25,7 @@
 							<input type="hidden" name="code" value="${status.index}">
 						</form>
 					</td>
-
+						<td>${total}</td>
 				</tr>
 			</c:forEach>
 		</table>

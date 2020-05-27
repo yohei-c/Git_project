@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -10,6 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import dto.ItemDto;
 
 /**
  * Servlet implementation class SessionServlet
@@ -25,17 +28,28 @@ public class SessionServlet extends HttpServlet {
 	HttpSession session;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		session = request.getSession(false);
+		
+		@SuppressWarnings("unchecked")
+		ArrayList<ItemDto> cart = (ArrayList<ItemDto>) session.getAttribute("cart");
+		
+		System.out.println(cart.get(0).getPrice());
+		
+		int total = 0;
+		
+		for(ItemDto item: cart) {
+			total += item.getPrice();
+			
+		}
+		System.out.println(total);
+		
+		session.setAttribute("total", total);
+		
 		ServletContext context = getServletContext();
 		RequestDispatcher dis = context.getRequestDispatcher("/Cart.jsp");
 		dis.forward(request, response);		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-	}
+
 
 	}
