@@ -10,12 +10,10 @@
 </head>
 <body>
 	<div>
+	<h2>SHOPPING SITE</h2>
 	<form action="ToppageServlet" method="get">
-		<h2>SHOPPING SITE</h2>
-		<button name="btn" value="insert">ログイン</button>
+		<input class="login" type="submit" name="button" value="ログイン">
 	</form>
 	</div>
-	
-
 </body>
 </html>

@@ -6,25 +6,32 @@ body{
 	background-size:cover;
 	font-size: 20px;
     font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+    
 }
 div {
 	text-align: center;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	padding-bottom:90px;	
 }
 h2 {
 	font-size:80px;
 	margin-left: 40px;
 	opacity:0.8;
-	color: #ffffff;
+	color: #333c5e;
 }
 
-button{
+input {
 	display: inline-block;
 	padding: 0.9em 3em;
 	text-decoration: none;
-	color: #800000;
-	border: solid 2px #800000;
+	color: #333c5e;
+	border: solid 2px #333c5e;
 	border-radius: 3px;
-	
 	margin: 0 auto;
 }
 
+.login:hover {
+	background: #800000;
+	color: white;
+}

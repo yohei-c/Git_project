@@ -8,16 +8,27 @@ body{
     font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
 }
 
+.back div{
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+}
 
-div{
-	margin-top: 100px;
-	padding-top: 50px;
-	padding-left: 18%;
-	float: left;
+.all div {
+	padding-left:20%;
+}
+
+.login div{
+	text-align: center;
+}
+
+.newMember div{
+	text-align: center;
 }
 
 h2{
-	color: #ffffff;
+	color: #333c5e;
+	opacity:0.8;
+	padding-top:20px;
 }
 
 
@@ -32,29 +43,30 @@ label{
 	display: inline-block;
 	padding: 0.3em 1em;
 	text-decoration: none;
-	color: #800000;
-	border: solid 2px #800000;
+	color: #333c5e;
+	border: solid 2px #333c5e;
 	border-radius: 3px;
-	margin-bottom: 10px;
+	margin-bottom:30px;
 }
 
 .newMember input{
 	display: inline-block;
 	padding: 0.9em 3em;
 	text-decoration: none;
-	color: #800000;
-	border: solid 2px #800000;
+	color: #333c5e;
+	border: solid 2px #333c5e;
 	border-radius: 3px;
-	margin-bottom: 10px;
-	margin:50px;
+	margin-bottom: 110px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 .submit:hover {
-	background: #800000;
+	background: #333c5e;
 	color: white;
 }
 
 .newMem:hover {
-	background: #800000;
+	background: #333c5e;
 	color: white;
 }
