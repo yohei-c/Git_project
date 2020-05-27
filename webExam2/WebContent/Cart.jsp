@@ -9,25 +9,20 @@
 </head>
 <body>
 	<h2>カートの内容を確認</h2>
-	<c:if test="${list != null }">
+	<c:if test="${cart != null }">
 		<table border="1">
 			<tr>
 				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th></th><th></th>
 			</tr>
 			
-			<c:forEach var="item" items="${list}">
+			<c:forEach  begin="0" var="item" items="${cart}" varStatus="status">
 				<tr>
 					<td>${item.id}</td><td>${item.code}</td><td>${item.name}</td><td>${item.category}</td><td>${item.price}</td>
+
 					<td>
-						<form action="ManageServlet" method="get">
-							<button name="btn" value="edit">変更</button>
-							<input type="hidden" name="code" value="${item.code}">
-						</form>
-					</td>
-					<td>
-						<form action="ManageServlet" method="get">
+						<form action="CartManageServlet" method="get">
 							<button name="btn" value="delete">削除</button>
-							<input type="hidden" name="code" value="${item.code}">
+							<input type="hidden" name="code" value="${status.index}">
 						</form>
 					</td>
 

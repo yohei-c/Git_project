@@ -10,9 +10,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dbAccess.DBAccess;
 import dbAccess.SelectForLogin;
+import dto.ProfileDto;
 
 /**
  * ログイン時に呼び出されるサーブレット<br>
@@ -28,9 +30,20 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
 		
+		// セッションの取得(なければnullが返ってくる)
+		// ここに処理を記入してください
+		HttpSession session = request.getSession(false); //sessionが最初はないからnullが入る ログインをしにくるからfalseが入る。logoutしたときにはsessionが残っている
+		// セッションの破棄
+		// ここに処理を記入してください
+		if(session != null) session.invalidate();//ログアウトした時の処理　ログアウトして破棄したいときに実行される
+		// ログイン失敗時、ログアウト時、不正操作時以外の場合
+		if(request.getAttribute("message") == null) request.setAttribute("message", "Please enter your name or Pass ");//requestスコープから値を取り出している
+		//80行目から飛んできたときはmessageがnullでないからif文は飛ばす		
+		response.setContentType("text/html; charset=UTF-8");
 		ServletContext context = getServletContext();
-		RequestDispatcher dis = context.getRequestDispatcher("/manageTop.html");
+		RequestDispatcher dis = context.getRequestDispatcher("/manegeTop.jsp");
 		dis.forward(request, response);
 	}
 
@@ -38,7 +51,8 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		request.setCharacterEncoding("utf-8");
+	
 		dbAccess = new SelectForLogin();
 		
 		try {
@@ -55,6 +69,8 @@ public class LoginServlet extends HttpServlet {
 			doGet(request, response);
 		}
 		
+
 		
 	}
 }
+
