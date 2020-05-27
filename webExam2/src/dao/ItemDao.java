@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import dto.ItemDto;
+import dto.ProfileDto;
 
 /**
  * DBとの接続、操作、切断を処理するクラス<br>
@@ -177,7 +178,7 @@ public class ItemDao {
 		}
 		return list;
 	}
-	
+
 	/**
 	 * 画面から受け取ったデータをDBに挿入するメソッド
 	 * @param dto (パラメータをまとめてもつオブジェクト)
@@ -195,6 +196,25 @@ public class ItemDao {
 			ps.setString(2, dto.getName());
 			ps.setString(3, dto.getCategory());
 			ps.setInt(4, dto.getPrice());
+			
+			n = ps.executeUpdate();
+		}finally {
+			ps.close();
+		}
+		return n;
+	}
+
+	
+	public int insertAccount(ProfileDto dto) throws SQLException {
+		sql = "INSERT INTO user (name, password) VALUES (?, ?)";
+		int n = 0;
+		
+		try {
+			ps = con.prepareStatement(sql);
+
+			ps.setString(1, dto.getName());
+			ps.setString(2, dto.getPass());
+			
 			
 			n = ps.executeUpdate();
 		}finally {
