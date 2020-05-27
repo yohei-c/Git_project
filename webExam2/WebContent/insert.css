@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+	margin: 0 auto;
+	background-image: url("aurora.jpg");
+	background-size:cover;
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.bkcg {
+	height: 100%;
+  	background: rgba(255,255,255,0.5);
+  	padding:30px;
+  	text-align: center;
+}
+
+.bkcg h2 {
+	font-size: 40px;
+	font-family: 'Sawarabi Mincho', sans-serif;
+	color: #191970;
+	font-weight: bold;
+}
+
+.categy {
+	padding-top: 60px;
+}
+
+.bkcg table {
+	margin-left:auto;margin-right:auto;
+}
+
+.join {
+	padding-top: 60px;
+}
+
