@@ -23,7 +23,7 @@ public class ToppageServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		ServletContext context = getServletContext();
-		RequestDispatcher dis = context.getRequestDispatcher("/toppage.html");
+		RequestDispatcher dis = context.getRequestDispatcher("/manageTop.html");
 		dis.forward(request, response);
 	}
 

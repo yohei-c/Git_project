@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+title {
+
+    padding-left: 30px;
+    line-height: 30px;
+    background: url(../images/icon.png) no-repeat;
+}
+
+
+i {
+	font-size: 35px;
+	font-family: "ヒラギノ角ゴシック";
+	
+}
+
+body{
+	
+	background-image: url("photo.jpeg");
+	background-size: cover;
+}
