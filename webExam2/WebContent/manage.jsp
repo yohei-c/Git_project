@@ -59,7 +59,7 @@
 	<c:if test="${list != null }">
 		<table border="1">
 			<tr>
-				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th></th><th></th>
+				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th></th><th></th><th></th>
 			</tr>
 			
 			<c:forEach var="item" items="${list}">
@@ -75,6 +75,24 @@
 						<form action="ManageServlet" method="get">
 							<button name="btn" value="delete">削除</button>
 							<input type="hidden" name="code" value="${item.code}">
+						</form>
+					</td>
+					<td>
+						<form action="ManageServlet" method="get">
+							<button name="btn" value="add">追加</button>
+							<input type="hidden" name="id" value="${item.id}">
+							<input type="hidden" name="code" value="${item.code}">
+							<input type="hidden" name="name" value="${item.name}">
+							<input type="hidden" name="category" value="${item.category}">
+							<input type="hidden" name="price" value="${item.price}">
+							
+						</form>
+					</td>
+					<td>
+						<form action="ManageServlet" method="get">
+							<button name="btn" value="CART">カートへ</button>
+
+							
 						</form>
 					</td>
 				</tr>
