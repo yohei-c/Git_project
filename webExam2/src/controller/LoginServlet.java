@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 		//80行目から飛んできたときはmessageがnullでないからif文は飛ばす		
 		response.setContentType("text/html; charset=UTF-8");
 		ServletContext context = getServletContext();
-		RequestDispatcher dis = context.getRequestDispatcher("/manegeTop.jsp");
+		RequestDispatcher dis = context.getRequestDispatcher("/manageTop.html");
 		dis.forward(request, response);
 	}
 
