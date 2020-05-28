@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <title>検索ページ</title>
-<link rel="stylesheet" href="./Style/manage.css">
+<link rel="stylesheet" href="manage.css">
 </head>
 <body>
 <div class="bkRGBA">
@@ -25,45 +25,45 @@
 		<input type="hidden" name="selectWay" value="all">
 	</form>
 	
-	<form action="ManageServlet" method="get">
 	<div class="reserch">
-		<p>商品名で検索</p>
-		<input type="text" placeholder="テレビ..." name="name">
-		<button name="btn" value="search">検索</button>
-		<input type="hidden" name="selectWay" value="name">
-	</form>
-</div>
+		<form action="ManageServlet" method="get">
+			<p>商品名で検索</p>
+			<input type="text" placeholder="テレビ..." name="name">
+			<button name="btn" value="search">検索</button>
+			<input type="hidden" name="selectWay" value="name">
+		</form>
+	</div>
 
-	<form action="ManageServlet" method="get">
 	<div class="object">
-		<p>カテゴリから検索</p>
-			<select name="category">
-			<option value="general">雑貨</option>
-			<option value="electric">家電</option>
-			<option value="book">書籍</option>
-			<option value="food">食品</option>
-			<option value="fashion">ファッション</option>
-			<option value="other">未分類</option>
-		</select>
-		<button name="btn" value="search">検索</button>
-		<input type="hidden" name="selectWay" value="category">
-	</form>
-</div>
+		<form action="ManageServlet" method="get">
+			<p>カテゴリから検索</p>
+				<select name="category">
+				<option value="general">雑貨</option>
+				<option value="electric">家電</option>
+				<option value="book">書籍</option>
+				<option value="food">食品</option>
+				<option value="fashion">ファッション</option>
+				<option value="other">未分類</option>
+			</select>
+			<button name="btn" value="search">検索</button>
+			<input type="hidden" name="selectWay" value="category">
+		</form>
+	</div>
 
-	<form action="ManageServlet" method="get">	
 	<div class="price">
-		<p>値段から検索</p>
-		<select name="price">
-			<option value="0">0-1500円</option>
-			<option value="1">1500-3000円</option>
-			<option value="2">3000-5000円</option>
-			<option value="3">5000-10000円</option>
-			<option value="4">10000円以上</option>
-		</select>
-		<button name="btn" value="search">検索</button>
-		<input type="hidden" name="selectWay" value="price">
-	</form>
-</div>
+		<form action="ManageServlet" method="get">	
+			<p>値段から検索</p>
+			<select name="price">
+				<option value="0">0-1500円</option>
+				<option value="1">1500-3000円</option>
+				<option value="2">3000-5000円</option>
+				<option value="3">5000-10000円</option>
+				<option value="4">10000円以上</option>
+			</select>
+			<button name="btn" value="search">検索</button>
+			<input type="hidden" name="selectWay" value="price">
+		</form>
+	</div>
 
 	<c:if test="${list != null }">
 		<table border="1">
