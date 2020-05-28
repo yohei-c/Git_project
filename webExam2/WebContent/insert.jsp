@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <title>商品登録ページ</title>
-<link rel="stylesheet" href="./Style/insert.css">
+<link rel="stylesheet" href="insert.css">
 </head>
 <body>
 <div class="bkcg">
