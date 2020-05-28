@@ -15,16 +15,15 @@ import javax.servlet.http.HttpSession;
 import dto.ItemDto;
 
 /**
- * Servlet implementation class SessionServlet
+ * Servlet implementation class CashServlet
  */
-@WebServlet("/SessionServlet")
-public class SessionServlet extends HttpServlet {
+@WebServlet("/CacheServlet")
+public class CacheServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	
 	HttpSession session;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -46,10 +45,9 @@ public class SessionServlet extends HttpServlet {
 		session.setAttribute("total", total);
 		
 		ServletContext context = getServletContext();
-		RequestDispatcher dis = context.getRequestDispatcher("/Cart.jsp");
+		RequestDispatcher dis = context.getRequestDispatcher("/Cache.jsp");
 		dis.forward(request, response);		
 	}
+	
 
-
-
-	}
+}

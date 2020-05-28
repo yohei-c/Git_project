@@ -44,6 +44,9 @@ public class ManageServlet extends HttpServlet {
 			case "CART":
 				next= "SessionServlet";
 				break;
+			case "cache":
+				next ="CacheServlet";
+				break;
 			default:
 				next = "manage.jsp";
 				break;
