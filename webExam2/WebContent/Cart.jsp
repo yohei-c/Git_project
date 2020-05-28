@@ -28,17 +28,12 @@
 						</form>
 					</td>
 
+						<td>${total}</td>
+
 				</tr>
 			</c:forEach>
-			 <tr>
-				<th></th><th></th><th></th><th>合計</th><th>${total}</th><th></th>
-			 </tr>
 		</table>
 	</c:if>
-	<form action="ManageServlet" method="get">
-		<button name="btn" value="cache">会計</button>
-	</form>
-	
 	<a href="http://localhost:8080/webExam2/ManageServlet">管理ページに戻る</a>
 	</div>
 </body>
