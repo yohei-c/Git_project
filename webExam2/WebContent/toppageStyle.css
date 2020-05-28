@@ -14,6 +14,8 @@ div {
 	background: rgba(255,255,255,0.5);
 	padding-bottom:90px;	
 }
+
+
 h2 {
 	font-size:80px;
 	margin-left: 40px;
@@ -32,6 +34,6 @@ input {
 }
 
 .login:hover {
-	background: #800000;
+	background: #333c5e;
 	color: white;
 }

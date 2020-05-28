@@ -1,13 +1,69 @@
 @charset "UTF-8";
 
-h2 {
-	font-size: 35px;
-	font-family: 'メイリオ';
-	
-}
 
 body{
 	
 	background-image: url("photo.jpeg");
 	background-size: cover;
+	font-size: 20px;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+div {
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	padding-bottom:90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+
+h2 {
+	font-size: 35px;
+	text-align: center;	
+	opacity:0.8;
+	color: #333c5e;
+}
+
+table {
+	display: block;
+  border-collapse: collapse;
+  border: solid 2px #333c5e;
+  text-align: center;
+  margin:40px;
+}
+
+table th {
+  padding: 10px;
+  opacity:0.8;
+}
+
+table td {
+  padding: 3px 10px;
+}
+
+c:if{
+	text-align: center;	
+}
+
+button {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #333c5e;
+	border: solid 2px #333c5e;
+	margin: 0 auto;
+}
+
+button:hover {
+	background: #333c5e;
+	color: white;
+}
+
+
+
+a {
+	color: #333c5e;
 }
