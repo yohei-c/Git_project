@@ -9,11 +9,11 @@
 <title>Cart</title>
 </head>
 <body>
-	<i class="fas fa-cart-arrow-down">カートの内容を確認</i>
-	<c:if test="${list != null }">
+	<h2>カートの内容を確認</h2>
+	<c:if test="${cart != null }">
 		<table border="1">
 			<tr>
-				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th></th><th></th>
+				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th></th>
 			</tr>
 			
 			<c:forEach  begin="0" var="item" items="${cart}" varStatus="status">
@@ -26,7 +26,7 @@
 							<input type="hidden" name="code" value="${status.index}">
 						</form>
 					</td>
-
+					<td>${total}</td>
 				</tr>
 			</c:forEach>
 		</table>
