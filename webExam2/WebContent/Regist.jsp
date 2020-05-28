@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="manageTopStyle.css">
 <title>Regist</title>
 </head>
 <body>
+	<P>${message}</P>
 	<h2>新規会員登録</h2>
 	<form action="Regist" method="post">
 		<p>USER NAME</p>

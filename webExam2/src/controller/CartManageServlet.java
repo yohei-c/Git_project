@@ -41,7 +41,7 @@ public class CartManageServlet extends HttpServlet {
 		session.setAttribute("cart", cart);
 
 		ServletContext context = getServletContext();
-		RequestDispatcher dis = context.getRequestDispatcher("/Cart.jsp");
+		RequestDispatcher dis = context.getRequestDispatcher("/SessionServlet");
 		dis.forward(request, response);
 	}
 

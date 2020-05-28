@@ -59,9 +59,9 @@ public class Regist extends HttpServlet {
 				doGet(request, response);
 			}
 		} catch (SQLException e) {
-	
+			request.setAttribute("message", "そのパスワードは使用されています");
 			e.printStackTrace();
-			
+			doGet(request, response);
 		}
 		
 		

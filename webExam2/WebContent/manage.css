@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+	margin: 0 auto;
+	background-image:url("aurora.jpg");
+	background-size:cover;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.bkRGBA{
+	height: 100%;
+  	background: rgba(255,255,255,0.5);
+}
+
+h2 {
+	color: #003366; 
+	text-align:center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #364e96;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+}
+
+form {
+	padding:10px;
+	margin:10px;
+}
+
+.reserch {
+	color: #00004C;
+	text-align: center;
+	font-size:25px;
+}
+
+.object {
+	color: #00004C;
+	font-size:20px;
+	text-align:left;
+}
+
+.price {
+	color: #00004C;
+	margin-right:50px;
+	font-size:20px;
+}

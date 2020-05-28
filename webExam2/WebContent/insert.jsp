@@ -5,12 +5,15 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>insert</title>
+<title>商品登録ページ</title>
+<link rel="stylesheet" href="./Style/insert.css">
 </head>
 <body>
+<div class="bkcg">
 	<h2>商品登録</h2>
 	<a href="http://localhost:8080/webExam2/ManageServlet">管理ページに戻る</a>
 	<form action="InsertServlet" method="post">
+		<div class="categy" >
 		<table border="1">
 			<tr>
 				<th>商品名</th><td><input type="text" name="name"></td>
@@ -32,11 +35,13 @@
 				<th>価格</th><td><input type="text" name="price"></td>
 			</tr>
 		</table>
-		<button>登録</button>
+	</div>
+		<div class="join"><button>登録</button></div>
 		
 		<c:if test="${message != null }">
 			<p>${message}</p>
 		</c:if>
 	</form>
+	</div>
 </body>
 </html>
