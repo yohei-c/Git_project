@@ -4,13 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="Cart.css">
 <meta charset="utf-8">
-<title>Cart</title>
+<title>Cache</title>
 </head>
 <body>
-	<div>
-	<h2>カートの内容を確認</h2>
+	<form action="ConfirmServlet" method="get">
+		<button>注文を確定する</button>
+	</form>
 	<c:if test="${cart != null }">
 		<table border="1">
 			<tr>
@@ -21,25 +21,14 @@
 				<tr>
 					<td>${item.id}</td><td>${item.code}</td><td>${item.name}</td><td>${item.category}</td><td>${item.price}</td>
 
-					<td>
-						<form action="CartManageServlet" method="get">
-							<button name="btn" value="delete">削除</button>
-							<input type="hidden" name="code" value="${status.index}">
-						</form>
-					</td>
-
 				</tr>
 			</c:forEach>
 			 <tr>
 				<th></th><th></th><th></th><th>合計</th><th>${total}</th><th></th>
 			 </tr>
 		</table>
-	</c:if>
-	<form action="ManageServlet" method="get">
-		<button name="btn" value="cache">会計</button>
-	</form>
+	</c:if>	
+
 	
-	<a href="http://localhost:8080/webExam2/ManageServlet">管理ページに戻る</a>
-	</div>
 </body>
 </html>

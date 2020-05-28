@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -10,46 +9,23 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import dto.ItemDto;
 
 /**
- * Servlet implementation class SessionServlet
+ * Servlet implementation class ConfirmServlet
  */
-@WebServlet("/SessionServlet")
-public class SessionServlet extends HttpServlet {
+@WebServlet("/ConfirmServlet")
+public class ConfirmServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	
-	HttpSession session;
-	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		session = request.getSession(false);
 		
-		@SuppressWarnings("unchecked")
-		ArrayList<ItemDto> cart = (ArrayList<ItemDto>) session.getAttribute("cart");
-		
-		
-		
-		int total = 0;
-		
-		for(ItemDto item: cart) {
-			total += item.getPrice();
-			
-		}
-		System.out.println(total);
-		
-		session.setAttribute("total", total);
+		request.setAttribute("message", "ありがとうございました");
 		
 		ServletContext context = getServletContext();
-		RequestDispatcher dis = context.getRequestDispatcher("/Cart.jsp");
+		RequestDispatcher dis = context.getRequestDispatcher("/Confirm.jsp");
 		dis.forward(request, response);		
-	}
-
-
-
-	}
+	}		
+}
