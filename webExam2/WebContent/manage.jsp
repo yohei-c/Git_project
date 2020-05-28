@@ -20,6 +20,13 @@
 		<button name="btn" value="insert">新規商品登録はこちら</button>
 	</form>
 	</div>
+	
+	<div class="cart">
+	<form action="ManageServlet" method="get">
+	<button name="btn" value="CART">カートへ</button>
+</form>
+</div>
+
 	<form action="ManageServlet" method="get">
 		<button name="btn" value="search">全商品一覧を表示</button>
 		<input type="hidden" name="selectWay" value="all">
@@ -97,13 +104,7 @@
 							
 						</form>
 					</td>
-					<td>
-						<form action="ManageServlet" method="get">
-							<button name="btn" value="CART">カートへ</button>
-
-							
-						</form>
-					</td>
+					
 				</tr>
 			</c:forEach>
 		</table>
