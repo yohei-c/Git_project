@@ -27,13 +27,18 @@
 							<input type="hidden" name="code" value="${status.index}">
 						</form>
 					</td>
-
-						<td>${total}</td>
-
-				</tr>
+			</tr>
 			</c:forEach>
+			<tr>
+				<th></th><th></th><th><th></th><th>合計</th><th>${total}</th>
+			</tr>
 		</table>
 	</c:if>
+	
+	<form action="ManageServlet" method="get">
+		<button name="btn" value="cache">お会計へ</button>
+	</form>
+	
 	<a href="http://localhost:8080/webExam2/ManageServlet">管理ページに戻る</a>
 	</div>
 </body>
