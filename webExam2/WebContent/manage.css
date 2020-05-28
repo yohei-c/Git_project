@@ -30,6 +30,11 @@ form {
 	margin:10px;
 }
 
+.cart {
+	float:right;
+	margin-top:-100px;
+}
+
 .reserch {
 	color: #00004C;
 	text-align: center;
