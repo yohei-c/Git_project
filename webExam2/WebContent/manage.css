@@ -2,7 +2,9 @@
 
 body{
 	margin: 0 auto;
+
 	background-image:url("aurora.png");
+
 	background-size:cover;
 	font-family: 'Noto Sans JP', sans-serif;
 }

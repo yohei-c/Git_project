@@ -6,7 +6,10 @@
 <head>
 <meta charset="utf-8">
 <title>検索ページ</title>
+
 <link rel="stylesheet" href="manage.css">
+
+
 </head>
 <body>
 <div class="bkRGBA">
@@ -25,6 +28,7 @@
 		<input type="hidden" name="selectWay" value="all">
 	</form>
 	
+
 	<div class="reserch">
 		<form action="ManageServlet" method="get">
 			<p>商品名で検索</p>
@@ -65,6 +69,7 @@
 		</form>
 	</div>
 
+	<div>
 	<c:if test="${list != null }">
 		<table border="1">
 			<tr>
