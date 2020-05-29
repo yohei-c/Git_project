@@ -4,15 +4,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="ConfirmStyle.css">
 <meta charset="utf-8">
 <title>Confirm</title>
 </head>
 <body>
-	<h1>${message}</h1>
+
+	<div>
+		<h1>${message}</h1>
+
 	
-	<form action="ManageServlet" method="get">
-		<button name="btn" value="remove">商品管理に戻る</button>
-	</form>
-	
+		<form action="ManageServlet" method="get">
+			<button>商品管理に戻る</button>
+		</form>
+	</div>
 </body>
 </html>
