@@ -2,11 +2,10 @@
 
 body{
 	margin: 0 auto;
-
+	color:#F0F8FF;
+	font-family:serif;
 	background-image:url("aurora.png");
-
 	background-size:cover;
-	font-family: 'Noto Sans JP', sans-serif;
 }
 
 .bkRGBA{
@@ -15,7 +14,7 @@ body{
 }
 
 h2 {
-	color: #003366; 
+	color: #F0F8FF; 
 	text-align:center;
 	font-size: 40px;
 	font-weight: bold;
@@ -38,17 +37,31 @@ form {
 .reserch {
 	color: #00004C;
 	text-align: center;
-	font-size:25px;
+	font-size:35px;
+	font-weight: bold;
+}
+.reserch mark {
+	background-color: #4682B4;
 }
 
 .object {
 	color: #00004C;
 	font-size:20px;
-	text-align:left;
+	text-align:center;
+	font-weight: bold;
+}
+
+.object mark {
+	background-color: #4682B4;
 }
 
 .price {
 	color: #00004C;
 	margin-right:50px;
 	font-size:20px;
+	font-weight: bold;
+}
+
+.price mark {
+	background-color: #4682B4;
 }

@@ -38,7 +38,7 @@
 
 	<div class="reserch">
 		<form action="ManageServlet" method="get">
-			<p>商品名で検索</p>
+			<p><mark>商品名で検索</mark></p>
 			<input type="text" placeholder="テレビ..." name="name">
 			<button name="btn" value="search">検索</button>
 			<input type="hidden" name="selectWay" value="name">
@@ -47,7 +47,7 @@
 
 	<div class="object">
 		<form action="ManageServlet" method="get">
-			<p>カテゴリから検索</p>
+			<p><mark>カテゴリから検索</mark></p>
 				<select name="category">
 				<option value="general">雑貨</option>
 				<option value="electric">家電</option>
@@ -63,7 +63,7 @@
 
 	<div class="price">
 		<form action="ManageServlet" method="get">	
-			<p>値段から検索</p>
+			<p><mark>値段から検索</mark></p>
 			<select name="price">
 				<option value="0">0-1500円</option>
 				<option value="1">1500-3000円</option>

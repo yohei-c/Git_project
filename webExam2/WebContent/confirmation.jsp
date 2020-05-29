@@ -4,10 +4,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>confirm</title>
+<title>商品を削除</title>
+<link rel="stylesheet" href="confirmation.css">
 </head>
 <body>
+<div class="bkRGBA">
 	<h2>以下の商品を削除します</h2>
+	<div class="con">
 	<table border="1">
 		<tr>
 			<th>商品ID</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th>
@@ -22,5 +25,6 @@
 		<button name="btn" value="no">いいえ</button>
 		<input type="hidden" name="code" value="${item.code}">
 	</form>
+	</div>
 </body>
 </html>
