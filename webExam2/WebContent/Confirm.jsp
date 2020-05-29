@@ -15,7 +15,7 @@
 
 	
 		<form action="ManageServlet" method="get">
-			<button>商品管理に戻る</button>
+			<button name="btn" value="remove">商品管理に戻る</button>
 		</form>
 	</div>
 </body>
