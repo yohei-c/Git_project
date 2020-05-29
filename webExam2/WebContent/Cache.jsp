@@ -6,11 +6,11 @@
 <head>
 <meta charset="utf-8">
 <title>Cache</title>
+<link rel="stylesheet" href="Cache.css">
 </head>
 <body>
-	<form action="ConfirmServlet" method="get">
-		<button>注文を確定する</button>
-	</form>
+<div class="bk">
+	
 	<c:if test="${cart != null }">
 		<table border="1">
 			<tr>
@@ -28,7 +28,15 @@
 			 </tr>
 		</table>
 	</c:if>	
+	
+	
+</div>
 
+<div>
+<form action="ConfirmServlet" method="get">
+		<button class="btn">注文を確定する</button>
+</form>
+</div>
 	
 </body>
 </html>
