@@ -37,6 +37,9 @@ public class SessionServlet extends HttpServlet {
 		
 		int total = 0;
 		
+		if(cart != null) {
+			
+		
 		for(ItemDto item: cart) {
 			total += item.getPrice();
 			
@@ -45,6 +48,10 @@ public class SessionServlet extends HttpServlet {
 		
 		session.setAttribute("total", total);
 		
+		}else {
+			request.setAttribute("message", "カートに何も入っていません");
+		}
+		
 		ServletContext context = getServletContext();
 		RequestDispatcher dis = context.getRequestDispatcher("/Cart.jsp");
 		dis.forward(request, response);		
@@ -52,4 +59,4 @@ public class SessionServlet extends HttpServlet {
 
 
 
-	}
+}
