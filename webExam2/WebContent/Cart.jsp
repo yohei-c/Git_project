@@ -9,8 +9,8 @@
 <title>Cart</title>
 </head>
 <body>
-	<div>
-	<h2>カートの内容を確認</h2>
+	<div class="all">
+		<h2>カートの内容を確認</h2>
 	<c:if test="${cart != null }">
 		<table border="1">
 			<tr>
@@ -35,9 +35,11 @@
 		</table>
 	</c:if>
 	
+	
 	<form action="ManageServlet" method="get">
-		<button name="btn" value="cache">お会計へ</button>
+		<input class="kaikei" type="submit" name="button" value="お会計へ">
 	</form>
+
 	
 	<a href="http://localhost:8080/webExam2/ManageServlet">管理ページに戻る</a>
 	</div>
