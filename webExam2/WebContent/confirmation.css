@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+	margin: 0 auto;
+	color:#F0F8FF;
+	font-family:serif;
+	background-image:url("aurora.png");
+	background-size:cover;
+}
+
+.bkRGBA{
+	height: 100%;
+  	background: rgba(255,255,255,0.5);
+}
+
+h2 {
+	text-align:center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #A52A2A; /*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #111111;/*上線*/
+  border-bottom: solid 3px #111111;/*下線*/
+  margin-bottom:100px;
+}
+
+.con table{
+	color:#000000;
+	width: 100%;
+  	border-collapse:separate;
+  	border-spacing: 0;
+	margin-left:auto;margin-right:auto;
+	margin-bottom: 100px;
+}
+
+.con {
+	text-align:center;
+	margin-bottom: 100px;
+}
+
+.con p {
+	color:#A52A2A;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.con button{
+	
+
+	}
+

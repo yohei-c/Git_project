@@ -9,12 +9,9 @@
 <title>Cart</title>
 </head>
 <body>
-
 	<div class="all">
 		<h2>カートの内容を確認</h2>
-		
 	<c:if test="${cart != null }">
-
 		<table border="1">
 			<tr>
 				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th></th>
@@ -36,13 +33,11 @@
 				<th></th><th></th><th><th></th><th>合計</th><th>${total}</th>
 			</tr>
 		</table>
-
 	</c:if>
 	
 	
->
 	<form action="ManageServlet" method="get">
-		<input class="kaikei" type="submit" name="button" value="お会計へ">
+		<button class="kaikei" name="btn" value="cache">お会計へ</button>
 	</form>
 
 	
