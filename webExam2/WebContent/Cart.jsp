@@ -9,13 +9,12 @@
 <title>Cart</title>
 </head>
 <body>
-	<c:if test="${cart == null }">
-	<h2>${message}</h2>
-	</c:if>
-	<div>
-	
+
+	<div class="all">
+		<h2>カートの内容を確認</h2>
+		
 	<c:if test="${cart != null }">
-	<h2>カートの内容を確認</h2>
+
 		<table border="1">
 			<tr>
 				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th></th>
@@ -37,11 +36,14 @@
 				<th></th><th></th><th><th></th><th>合計</th><th>${total}</th>
 			</tr>
 		</table>
-	<form action="ManageServlet" method="get">
-		<button name="btn" value="cache">お会計へ</button>
-	</form>
+
 	</c:if>
 	
+	
+>
+	<form action="ManageServlet" method="get">
+		<input class="kaikei" type="submit" name="button" value="お会計へ">
+	</form>
 
 	
 	<a href="http://localhost:8080/webExam2/ManageServlet">管理ページに戻る</a>
