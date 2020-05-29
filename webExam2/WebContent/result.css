@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+	text-align: center
+	margin: 0 auto;
+	background-image: url("photo.jpeg");
+	background-size: cover;
+	font-size: 20px;
+    font-family: "YuGothic","Yu Gothic","Meiryo","�q���M�m�p�S","sans-serif";
+}
+
+
+h2 {
+	font-size:40px;
+	margin-left: 40px;
+	opacity:0.8;
+	color: #339966;
+	text-align: center;	
+	
+}
+
+p {
+	font-size:30px;
+	text-align: center;	
+	margin-left: 40px;
+	
+}
+
+
+.kanri {
+	font-size:20px;
+	text-align: center;	
+	margin-left: 40px;
+}
+
+.img {
+	
+}
+
+.photo{
+  margin-left: 40em;
+}
