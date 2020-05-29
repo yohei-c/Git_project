@@ -15,9 +15,7 @@ p{
 <body>
 	<h2>処理結果</h2>
 	<p>${message}</p>
-		<div class= photo>
-			<img src="ng.png">
-		</div>
+
 	
 		<div class= kanri>
 			<a href="http://localhost:8080/webExam2/ManageServlet">管理ページに戻る</a>

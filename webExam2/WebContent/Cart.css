@@ -54,7 +54,6 @@ button {
 	color: #333c5e;
 	border: solid 2px #333c5e;
 	margin: 0 auto;
-	
 }
 
 button:hover {
@@ -63,7 +62,7 @@ button:hover {
 }
 
 
-input {
+kaikei {
 	display: inline-block;
 	padding: 0.3em 1em;
 	text-decoration: none;
@@ -71,7 +70,7 @@ input {
 	border: solid 2px #333c5e;
 	margin: 0 auto;
 	padding: 0.9em 3em;
-	
+	margin: 300px;
 	position: absolute;
   	right: 0;
   	bottom: 0;

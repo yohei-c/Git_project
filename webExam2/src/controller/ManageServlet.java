@@ -47,6 +47,9 @@ public class ManageServlet extends HttpServlet {
 			case "cache":
 				next ="CacheServlet";
 				break;
+			case "remove":
+				next ="RemoveServlet";
+				break;
 			default:
 				next = "manage.jsp";
 				break;
