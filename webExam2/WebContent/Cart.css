@@ -30,8 +30,8 @@ table {
 	border: solid 2px #333c5e;
 	text-align: center;
 	margin:40px;
-	float:left;
-	margin-left:180px;
+	margin-left:650px;
+	
 }
 
 table th {
@@ -47,13 +47,14 @@ c:if{
 	text-align: center;	
 }
 
-button {
+.kaikei {
 	display: inline-block;
-	padding: 0.3em 1em;
+	
 	text-decoration: none;
 	color: #333c5e;
 	border: solid 2px #333c5e;
-	margin: 0 auto;
+	margin-left: 1200px;
+	
 }
 
 button:hover {
@@ -62,19 +63,7 @@ button:hover {
 }
 
 
-kaikei {
-	display: inline-block;
-	padding: 0.3em 1em;
-	text-decoration: none;
-	color: #333c5e;
-	border: solid 2px #333c5e;
-	margin: 0 auto;
-	padding: 0.9em 3em;
-	margin: 300px;
-	position: absolute;
-  	right: 0;
-  	bottom: 0;
-}
+
 
 input:hover {
 	background: #333c5e;
